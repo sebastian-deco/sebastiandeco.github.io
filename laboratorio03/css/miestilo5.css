@@ -1,0 +1,141 @@
+/* agregamos colores de fondo para las etiquetas de maquetacion */
+body {
+  background-color: blue;
+}
+.contenedor {
+  background-color: gainsboro;
+}
+
+header {
+  background-color: gold;
+}
+nav {
+  background-color: green;
+}
+section {
+  background-color: honeydew;
+}
+footer {
+  background-color: rebeccapurple;
+}
+
+/* agregamos un borde de tipo dotted */
+.borde1 {
+  border-style: dotted;
+}
+
+/* agregamos un borde de tipo dashed */
+.borde2 {
+  border-style: dashed;
+}
+
+/* agregamos un borde de tipo solid */
+.borde3 {
+  border-style: solid;
+}
+
+/* agregamos un borde de tipo double */
+.borde4 {
+  border-style: double;
+}
+
+/* agregamos un borde de tipo groove */
+.borde5 {
+  border-style: groove;
+}
+
+/* agregamos un borde de tipo ridge */
+.borde6 {
+  border-style: ridge;
+}
+
+/* agregamos un borde de tipo inset */
+.borde7 {
+  border-style: inset;
+}
+
+/* agregamos un borde de tipo outset */
+.borde8 {
+  border-style: outset;
+}
+
+/* agregamos un borde de tipo none */
+.borde9 {
+  border-style: none;
+}
+
+/* agregamos un borde de tipo hidden */
+.borde10 {
+  border-style: hidden;
+}
+
+/* agregamos un borde de tipo combinado */
+/* border-style:valor; --> borde se aplica a los 4 lados de la etiqueta */
+/* border-style:valor1 valor2; --> borde se aplica (arriba,abajo)(izquierda,derecha) */
+/* border-style:valor1 valor2 valor3; --> borde se aplica (arriba)(izquierda,derecha)(abajo) */
+/* border-style:valor1 valor2 valor3 valor4; --> borde se aplica (arriba)(derecha)(abajo)(izquierda) */
+
+.borde11 {
+  border-style: solid dashed double dotted;
+}
+
+.borde12 {
+  border-style: dotted;
+  border-width: 10px;
+}
+
+.borde13 {
+  border-style: dashed;
+  border-width: medium;
+}
+
+.borde14 {
+  border-style: solid;
+  border-width: 10px 3px 25px 15px;
+}
+
+/* aplicamos un borde cambiando su color */
+.borde15 {
+  border-style: solid;
+  border-color: red;
+}
+
+.borde16 {
+  border-style: dashed;
+  border-width: 10px;
+  border-color: red green blue yellow;
+}
+/* aplicamos bordes solo a un lugar especifico 
+arriba --> top
+abajo --> bottom
+izquierda --> left
+derecha --> right
+*/
+
+.borde17 {
+  border-top-style: dashed;
+}
+.borde18 {
+  border-bottom-style: dotted;
+}
+
+.borde19 {
+  border-left-style: groove;
+}
+
+.borde20 {
+  border-right-style: solid;
+}
+
+/* aplicamos bordes redondeados */
+.borde21 {
+  border-style: solid;
+  border-width: medium;
+  border-radius: 5px;
+}
+
+.borde22 {
+  border-style: solid;
+  border-width: 20px;
+  border-radius: 15px;
+}

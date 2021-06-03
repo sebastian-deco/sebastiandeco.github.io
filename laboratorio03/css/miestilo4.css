@@ -1,0 +1,132 @@
+/* esto es un comentario */
+/* aplicar comentarios a las partes de la pagina web */
+/* le aplicamos colores de fondo */
+.contenedor {
+  background-color: blue;
+}
+.cabecera {
+  background-color: blueviolet;
+}
+.menu {
+  background-color: chartreuse;
+}
+.contenido {
+  background-color: chocolate;
+}
+.pie {
+  background-color: cornflowerblue;
+}
+
+body {
+  background-color: darkslategray;
+}
+
+/* le aplicamos una imagen de fondo al parrafo */
+.parrafoimagen {
+  background-image: url("/img/vivs.jpg");
+}
+
+/* le aplicamos un color de fondo al parrafo y transparencia */
+.parrafotransparencia {
+  background-color: black;
+  opacity: 75%;
+  color: aliceblue;
+}
+
+/* agregamos una imagen de fondo al parrafo, pero que se repita */
+.parrafoimagenrepetir {
+  background-image: url("/img/html5ycss3.png");
+}
+
+/* agregamos una imagen de fondo al parrafo pero quiero que no se repita */
+.parrafoimagennorepetir {
+  background-image: url("/img/html5ycss3.png");
+  background-repeat: no-repeat;
+}
+
+.parrafoimagentamaño {
+  background-image: url("/img/html5ycss3.png");
+  background-size: 30px;
+}
+
+.parrafoimagenrepetirhorizontal {
+  background-image: url(/img/html5ycss3.png);
+  background-repeat: repeat-x;
+  background-size: 30px;
+}
+
+.parrafoimagenrepetirvertical {
+  background-image: url(/img/html5ycss3.png);
+  background-repeat: repeat-y;
+  background-size: 30px;
+}
+
+/* agregamos una imagen de fondo al parrafo pero la alineamos al centro */
+
+.parrafoimagencentrar {
+  background-image: url(/img/html5ycss3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+/* agregamos una imagen de fondo al parrafo pero la alineamos a la izquierda */
+
+.parrafoimagenizquierda {
+  background-image: url(/img/html5ycss3.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+/* agregamos una imagen de fondo al parrafo pero la alineamos a la derecha */
+
+.parrafoimagenderecha {
+  background-image: url(/img/html5ycss3.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+/* agregamos una imagen de fondo al parrafo pero la alineamos a la parte superior */
+
+.parrafoimagensuperior {
+  background-image: url(/img/html5ycss3.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+/* agregamos una imagen de fondo al parrafo pero la alineamos a la parte inferior */
+
+.parrafoimageninferior {
+  background-image: url(/img/html5ycss3.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+/* agregamos una imagen de fondo al parrafo pero la alineamos a la derecha superior*/
+
+.parrafoimagensuperiorderecha {
+  background-image: url(/img/html5ycss3.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+/* agregamos una imagen de fondo al parrafo pero la alineamos a la izquierda inferior */
+
+.parrafoimageninferiorizquierda {
+  background-image: url(/img/html5ycss3.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 30px;
+}
+
+.parrafoimagenfondo {
+  background-image: url(/img/vivs.jpg), url(/img/html5ycss3.png);
+  background-position: left, right;
+  background-size: 80px, 150px;
+  background-repeat: no-repeat;
+}

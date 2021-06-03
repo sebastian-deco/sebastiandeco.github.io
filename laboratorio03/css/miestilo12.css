@@ -1,0 +1,93 @@
+.contenedor {
+  background-color: black;
+}
+
+/* aplicaremos degradados a las cajas */
+/* generamos un degradado de abajo hacia arriba */
+.degradado1 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to bottom, red, yellow);
+}
+
+/* generamos un degrado de izquierda a drecha */
+.degradado2 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to left, green, yellow);
+}
+
+/* generamos un degradado de derecha a izquierda */
+.degradado3 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to right, blue, yellow);
+}
+
+/* generamos un degradado de arriba hacia abajo */
+.degradado4 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(to top, red, white);
+}
+
+/* generamos un degradado de muchos colores de izquierda a derecha */
+.degradado5 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(
+    to left,
+    green,
+    yellow,
+    red,
+    blue,
+    white,
+    orange
+  );
+}
+
+/* aplicaremos un degradado radial de muchos colores */
+.degradado6 {
+  width: 500px;
+  height: 250px;
+  background: repeating-radial-gradient(
+    green,
+    yellow,
+    red,
+    blue,
+    white,
+    orange
+  );
+}
+
+/* aplicamos los degradados utilizando los angulos */
+/* generamos un degradado de abajo hacia arriba */
+.degradado7 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(180deg, red, yellow);
+}
+
+.degradado8 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(-90deg, green, yellow);
+}
+
+.degradado9 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(90deg, blue, yellow);
+}
+
+.degradado10 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(0deg, red, white);
+}
+
+.degradado11 {
+  width: 500px;
+  height: 250px;
+  background: repeating-linear-gradient(70deg, red, white);
+}

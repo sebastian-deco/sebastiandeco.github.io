@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajando con formularios</title>
+</head>
+
+<body>
+    <h1>Formulario de Registro de alumnos</h1>
+    <form action="pagina-23.html" method="GET">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="txt-dni"> Numero de documento:</label> <input type="text" id="txt-dni" name="dni" placeholder="Ingrese su DNI" required><br>
+            <label for="txt-nombre">Nombres:</label> <input type="text" id="txt-nombre" name="nombre" placeholder="Ingrese sus nombres" required><br>
+            <label for="txt-apellido">Apellidos:</label> <input type="text" id="txt-apellido" name="apellidos" placeholder="Ingrese sus apellidos" required><br>
+            <label for="txt-fechaNac"> Fecha de nacimiento:</label> <input type="date" id="txt-fechaNac" name="fecha-nacimiento" required><br>
+            <label for="txt-direc">Dirección:</label> <input type="text" id="txt-direc" name="direccion" placeholder="Ingrese su dirección" required><br>
+            <label for="cboDistrito">Distrito:</label>
+            <select name="distrito" id="cboDistrito" required>
+                <option value="0">Seleccione un distrito</option>
+                <option value="1">Cercado de Lima</option>
+                <option value="2">Breña</option>
+                <option value="3">San Juan de Lurigancho</option>
+                <option value="4">Jesus Maria</option>
+                <option value="5">San Juan de Miraflores</option>
+            </select><br>
+            <label>Sexo:</label>
+            <input type="radio" name="genero" id="male">
+            <label for="male">Maculino</label>
+            <input type="radio" name="genero" id="female">
+            <label for="female">Femenino</label><br>
+            <label for="fulfoto">Fotografía:</label> <input type="file" name="fulfoto" id="fulfoto"><br>
+            <label for="tatObservaciones">Observaciones:</label> <textarea name="observaciones" id="tatObservaciones" cols="30" rows="10"></textarea><br>   
+            <label>Estado:</label>
+            <input type="checkbox" name="estado" id="enable">
+            <label for="enable">Habilitado</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos del curso</legend>
+            <label for="cboCiclo">Ciclo:</label>
+            <select name="ciclo" id="cboCiclo" required>
+                <option value="0">Seleccione un ciclo</option>
+                <option value="1">I ciclo</option>
+                <option value="2">II ciclo</option>
+                <option value="3">III</option>
+                <option value="4">IV ciclo</option>
+                <option value="5">V ciclo</option>
+                <option value="6">VI ciclo</option>
+            </select><br>
+            <label>Turno:</label>
+            <input type="radio" name="turno" id="rbM">
+            <label for="rbM">Mañana</label>
+            <input type="radio" name="turno" id="rbT">
+            <label for="rbT">Tarde</label>
+            <input type="radio" name="turno" id="rbN">
+            <label for="rbN">Noche</label><br>
+            <label for="cboSeccion">Sección:</label>
+            <select name="seccion" id="cboSeccion" required>
+                <option value="0">Seleccione una opcion</option>
+                <option value="1">A</option>
+                <option value="2">B</option>
+                <option value="3">C</option>
+                <option value="4">D</option>
+                <option value="5">E</option>
+                <option value="6">F</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Registrar" id="btnRegistrar"></input>
+        <button type="buttom" name="btnActualizar" id="btnActualizar">Actualizar</button>
+        <button type="reset" name="btnEliminar" id="btnEliminar">Eliminar</button>
+    </form>
+    <!-- Regresar a la pagina principal -->
+    <h2>Enlace de regreso</h2>
+    <a href="index.html">Regresa al menu principal</a>
+</body>
+
+</html>

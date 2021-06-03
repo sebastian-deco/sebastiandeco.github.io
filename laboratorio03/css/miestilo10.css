@@ -1,0 +1,81 @@
+/* importamos letras de google */
+
+@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
+
+* {
+  padding: 15px;
+}
+body {
+  background-color: red;
+}
+
+.contenedor {
+  background-color: white;
+}
+
+/* agregamos tipos de letras */
+.parrafo1 {
+  font-family: "Times New Roman", Times, serif;
+}
+.parrafo2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.parrafo3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.parrafo4 {
+  font-style: italic;
+}
+
+.parrafo5 {
+  font-style: oblique;
+}
+
+.parrafo6 {
+  font-style: normal;
+}
+
+.parrafo7 {
+  font-weight: bold;
+}
+
+.parrafo8 {
+  font-weight: bolder;
+}
+
+.parrafo9 {
+  font-variant: small-caps;
+}
+
+.parrafo10 {
+  font-variant: normal;
+}
+
+.parrafo11 {
+  font-size: 15px;
+}
+
+.parrafo12 {
+  font-family: "Girassol", cursive;
+}
+
+/* utilizamos las fuentes descargadas */
+
+@font-face {
+  font-family: "Teko", sans-serif;
+  src: url("/fonts/Teko-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Itim";
+  src: url("/fonts/Itim-Regular.ttf");
+}
+
+/* llamamos las letras descargadas */
+
+.parrafo13 {
+  font-family: "Teko", sans-serif;
+}
+
+.parrafo14 {
+  font-family: "Itim";
+}
