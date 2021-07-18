@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavasCript - Parte 3</title>
+    <script type="text/javascript">
+    //Ejemplo1
+    //Desarrollar una aplicacion que permita ingresar 3 notas y luego calcular el promedio
+    //si el promedio es mayor o igual a 13 se mostrara un mensaje indicando "Aprobado"
+    // 5
+    // ¿Que tipo de datos necesito
+    // Real,Texto
+    // ¿Cuales seria variables?
+    n1,n2,n3, prom,men
+    // ¿que variables voy a leer?
+    // n1,n2,n3
+    // definiendo e inicializando variables
+    var n1=0, n2=0, n3=0, prom=0, men="";
+    // capturando valores
+    n1=parseFloat(prompt("Ingrese nota 1"));
+    n2=parseFloat(prompt("Ingrese nota 2"));
+    n3=parseFloat(prompt( "Ingrese nota 3"));
+    // realizando operaciones
+    prom=(n1+n2+n3)/3
+    // condicion
+    if(prom>=13){
+        men="Aprobado";
+    }
+    // mostrando resultados
+    alert("El promedio es:"+prom)
+    alert(men);
+
+    //Ejemplo 2
+    // Desarrollar una aplicacion que permita calcular el sueldo final de un trabajador
+    // si se sabe que el sueldo basico se ingresa y ademas si el trabajador pertenece a 
+    // al suedo basico.Mostrar todos los resultados
+    // ¿cuantas variables necesito
+    // 5
+    // ¿que tipo de datos necesito
+    // Real,Entero
+    // ¿Cuales seria variables?
+    sb, bon, des, sf, cat
+    // ¿Que vriables voy a leer?
+    // sb ,cat 
+    // definiendo e inicializando variables
+    var sb=0, bon=0,des=0,sf=0,cat=0;
+    // capturando valores
+    sb=parseFloat(prompt("Ingrese el sueldo Basico:"));
+    cat=parseFloat(prompt("Ingrese la categoria:"));
+    // condicion
+    if(cat==3){
+        bon=sb*0.07;
+        des=sb*0.03;
+    }
+    sf=sb+bon-des;
+    // mostrando resultados
+    document.write("El sueldo basico es:"+sb+"<br>");
+    document.write("La bonificacion es:"+bon+"<br>");
+    document.write("El descuento es:"+des+"<br>");
+    document.write("El sueldo final es:"+sf+"<br>");
+    document.write("<hr>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

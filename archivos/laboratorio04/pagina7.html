@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript - Parte 3</title>
+    <script type="text/javascript">
+    //Ejemplo 1
+    // Desarrollar una aplicacion que permita calcular el area de un triangulo si se sabe que se 
+    // debe de ingresar su base y altura .Si el area del triangulo es mayor a 50 se mostrara
+    // un mensaje indicando "Es un triangulo pequeño"
+    // ¿cuantas variables necesito?
+    // 4
+    // ¿que tipo de datos necesito ?
+    // Real,Texto
+    // ¿Cuales seria variables?
+    // bas, alt ,area ,men
+    // ¿Que variables voy a leer?
+    // bas, alt
+    // definiendo e inicializando variables
+    var bas=0, alt=0, area=0 ,men="";
+    // capturando valores
+    bas=parseFloat(prompt("Ingrese la base del triangulo:"));
+    alt=parseFloat(prompt("Ingrese la altura del triangulo:"));
+    //realizando operaciones
+    area=(bas*alt)/2;
+    // condicion
+    if(area>50){
+        men="Es un triangulo grande";
+    }else{
+        men="Es un triangulo pequeño";
+    }
+    // mostrando resultados
+    alert("El area del triangulo es:"+area);
+    alert(men);
+
+
+    // Ejemplo2
+    // Desarrollar una aplicacion que permita calcular el total a pagar por una compra de un producto, si se sabe que se va a comprar.Si el subtotal es mayor a 1000 se aplicara un descuento del 5% en caso contrario el descuento sera del 2%.si el cliente quiere factura se aplicara el 18% al subtotal para el igv en caso contrario con boleta no se aplicara nada.Mostrar todos los resultados
+    // ¿cuantas variables necesito?
+    // 7
+    // ¿que tipo de datos necesito?
+    // Real,Entero,Texto
+    // ¿Cuales seria varibles?
+    // pre, can, sbt, des, igv, tot, com
+    // ¿que variables voy a leer?
+    // pre, can, com
+    // definiendo e inicializando variables
+    var pre=0, can=0, sbt=0, des=0, igv=0, tot=0, com="";
+    // capturando valores
+    pre=parseFloat(prompt("Ingrese el precio del producto:"));
+    can=parseFloat(prompt("Ingrese la cantidad a comprar"));
+    com=prompt("Ingrese el tipo de comprobanten[f]Factura o [b]Boleta");
+    // realizando operaciones
+    sbt=pre*can;
+    // condicion
+    if(sbt>1000){
+        des=sbt*0.05;
+    }else{
+        des=sbt*0.02;
+    }
+
+    if(com=="f"){
+        igv=sbt*0.18;
+    }else{
+        igv=0;
+    }
+    tot=sbt-des+igv;
+    // mostrando resultados
+    document.write("El subtotal es:"+sbt+"<br>");
+    document.write("El descuento es:"+des+"<br>");
+    document.write("El igv es:"+igv+"<br>");
+    document.write("El total es:"+tot+"<br>");
+    document.write("<hr>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
