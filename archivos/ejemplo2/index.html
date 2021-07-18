@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- configuramos las escalas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimun-scale=1.0">
+    <!-- recordar la importancia de estos metas -->
     <meta name="description" content="" >
     <meta name="keywords" content="">
     <title>Ejemplo 2 Maquetacion HTML</title>
+    <!-- llamamos al estilo -->
+    <link rel="stylesheet" href="css/miestilo.css" type="text/css">
 </head>
 <body>
     <!--Inicia Cabecera-->
-    <div>
+    <div class="contenedor"> 
         <header>
             <!-- Inicia el Menu  -->
             <nav>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="acercade.html">Acerca de</a></li>
+                        <a href="/archivos/laboratorio01/index.html">Regresar</a>
                     <li><a href="#">Producto</a></li>
                     <li><a href="#">Contactos</a></li>
+                    <hr>
                 </ul>
             </nav>
             <!-- Fin del Menu -->
@@ -26,18 +32,18 @@
         <!-- Fin Cabecera -->
         <!-- Incia la Seccion Principal -->
     
-        <section>
+        <section class="principal">
             <!-- Inicia la Imagen -->
-            <div>
+            <div class="imagen">
                 <img src="img/foto1.jpg" alt="Foto Principal">
             
             </div>
             <!-- Fin de la Imagen -->
             <!-- Inicia Publicaciones -->
-            <section>
+            <section class="publicaciones">
                 <!-- Inicia Articulo -->
                 <article>
-                    <h2>Acercade</h2>
+                    <h2>titulo del Articulo</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem perferendis blanditiis modi dolore tempore odio mollitia possimus eaque. Hic nihil quod officia voluptatem illum culpa rerum ipsa fugit provident soluta. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem maxime doloribus, fugiat quasi autem repellendus ipsum incidunt nobis id tempore voluptatum dicta nemo assumenda ea. Earum vero officia quis officiis?
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, tempore repellat rerum dolorem quam inventore eaque nobis aspernatur sit aperiam provident eligendi aliquam voluptatum non minima consectetur iste consequuntur? Eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores perferendis nobis rem hic esse facere! Dolore, eaque maiores cum ut sunt culpa consequuntur, nam harum possimus dicta adipisci illum pariatur?
@@ -57,8 +63,8 @@
         <!-- Inicia Anuncios -->
         <aside>
             <!-- Inicia Destacados -->
-            <div>
-                <h3>Articulos Destacados</h3>
+            <div class="anuncio">
+                <h3 class="tituloanuncio">Articulos Destacados</h3>
                 <ul>
                     <li><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus fuga aspernatur necessitatibus aut harum nobis tempore. Recusandae natus cupiditate ex in rerum, cum ad hic est ratione placeat itaque accusamus!</a></li>
                     <li><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus fuga aspernatur necessitatibus aut harum nobis tempore. Recusandae natus cupiditate ex in rerum, cum ad hic est ratione placeat itaque accusamus!</a></li>
@@ -69,8 +75,8 @@
             </div>
             <!-- Fin Destacado -->
             <!-- Inicia Informacion -->
-            <div>
-                <h3>Informacion</h3>
+            <div class="anuncio">
+                <h3 class="tituloanuncio">Informacion</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic itaque esse harum ipsa, facilis iste necessitatibus veniam. Consectetur ad ratione magni, tempora nobis quos voluptates sit incidunt qui vero!
                 </p>
